@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #666;
+  background-image: url('../img/qMark2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Quicksand, sans-serif;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#question {
+  background: linear-gradient(#3AB4F2, #0078AA);
+  box-shadow: 10px 10px 30px #000000aa;
+  width: 100%;
+  height: auto;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1em;
+  padding: 1em 1em;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.answer {
+  width: 100%;
+  box-shadow: 10px 10px 30px #000000aa;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.choices {
+  width: 100%;
+  background: linear-gradient(#E6B325, #A47E3B);
+  box-shadow: 10px 10px 30px #000000aa;
+  /* font-size: 2.5rem; */
+  font-weight: 800;
+  padding: 2em 1em;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+
+.choice {
+  cursor: pointer;
+  display: block;
+  margin: .5em 2.5em;
+  font-size: 2rem;
+}
+
+
+.win {
+  background: linear-gradient(#ADCF9F, #76BA99);
+}
+
+.lose {
+  background: linear-gradient(#FF8B8B, #EB4747);
+}
+
+#next {
+  width: 100%;
+  font-size: 3rem;
+  padding: .5em 0;
+  margin-top: 1em;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 30px #000000aa;
+  border-radius: 2rem;
+  background: linear-gradient(#CA955C, #876445);
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95vw;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+  
+  #question {
+    font-size: 2rem;
+  }
+  
+  .choice {
+    font-size: 1rem;
+    border: 1px solid #555;
+    box-shadow: 4px 4px 5px #00000055;
+    border-radius: 2em;
+    padding: .3em .5em;
+  }
+  
+  #next {
+    font-size: 1.5rem;
+  }
+}
